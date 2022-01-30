@@ -1,0 +1,220 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* css variables */
+:root {
+  --navbar-height: 10px;
+}
+/* navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+}
+/* navbar logo and images */
+#logo {
+  margin: 3px 7px;
+}
+
+#logo img {
+  height: 100px;
+  margin: 25px 15px;
+}
+
+/* navbar list styling */
+#navbar ul {
+  display: flex;
+}
+
+#navbar li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a {
+  display: block;
+  padding: 2px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* home section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url(../bg1.jpg) no-repeat center center/cover;
+  height: 263%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: crimson;
+  text-align: center;
+}
+#home p {
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.712);
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+/* services section */
+#services {
+  margin: 20px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid green;
+  padding: 10px;
+  margin: 25px 6px;
+  border-radius: 23px;
+  background-color: rgb(229, 230, 225);
+  align-content: center;
+  font-size: 1.2rem;
+  font-family: "Amatic SC", cursive;
+}
+#services .box img {
+  height: 120px;
+  margin: auto;
+  display: block;
+  border-radius: 23px;
+}
+#service.box p {
+  font-size: 1.9rem;
+}
+/* clients section */
+
+#clients img {
+  height: 120px;
+  padding: 20px;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients-section {
+  position: relative;
+  height: 300px;
+}
+#clients-section::before {
+  content: "";
+  position: absolute;
+  background: url(../bg.jpg) no-repeat center center/cover;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+/* contact us */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url(../contact.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.4rem;
+  font-family: "Anton", sans-serif;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+/* footer */
+footer {
+  background: black;
+  color: aliceblue;
+  padding: 4px 490px;
+}
+/* utility classes */
+.h-primary {
+  font-size: 3.2rem;
+  padding: 2px;
+  text-transform: capitalize;
+  font-family: "Anton", sans-serif;
+  text-align-last: center;
+  color: crimson;
+}
+.h-secondary center {
+  font-size: 1.8rem;
+  padding: 20px;
+  text-transform: capitalize;
+  font-family: "Amatic SC", cursive;
+  text-align-last: center;
+  color: rgba(207, 0, 0, 0.747);
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: crimson;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+/*fonts that can be used with this 
+ font-family: 'Amatic SC', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Anton', sans-serif;
+ */

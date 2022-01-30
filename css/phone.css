@@ -1,0 +1,38 @@
+/* navigation */
+#navbar {
+  flex-direction: column;
+}
+/* home section */
+#home {
+  height: 370px;
+}
+#home::before {
+}
+#home p {
+  font-size: 1px;
+}
+/* services section */
+#services {
+  flex-direction: column;
+}
+#services .box {
+}
+
+/* clients section */
+#clients {
+  overflow: hidden;
+}
+
+/* contact section */
+
+/* footer */
+
+/* utility classes */
+.h-primary {
+  font-size: 15px;
+  padding: 2px;
+  text-transform: capitalize;
+  font-family: "Anton", sans-serif;
+  text-align-last: center;
+  color: crimson;
+}
